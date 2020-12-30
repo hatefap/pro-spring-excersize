@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
+    <import resource="app-context-xml_1.xml"/>
     <bean id="injectSimpleConfig" class="applicationcontextSpEL.InjectSimpleConfig"/>
     <bean id="inject" class="applicationcontextSpEL.InjectSimpleSpec"
           p:name="#{injectSimpleConfig.name}"
@@ -13,4 +13,9 @@
           p:height="#{injectSimpleConfig.height + 5}"
     >
     </bean>
+
+    <bean id="">
+
+    </bean>
+
 </beans>
