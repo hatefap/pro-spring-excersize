@@ -1,4 +1,4 @@
 package differentautowirescenario;
 
-public class Foo {
+public interface Foo {
 }
